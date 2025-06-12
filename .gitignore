@@ -1,0 +1,30 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+.venv/
+venv/
+
+# Local environment variables
+.env
+*.env
+
+# Logs
+*.log
+
+# IDE/editor configs
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# LSM Project-specific
+SStables/
+
+# Pytest and coverage
+.pytest_cache/
+.coverage
