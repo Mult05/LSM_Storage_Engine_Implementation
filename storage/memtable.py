@@ -10,7 +10,7 @@ class MemTable:
         self.table[key] = value
 
     def get(self, key):
-        if self.table.get(key = TOMBSTONE):
+        if self.table.get(key) == TOMBSTONE:
             return None
         return self.table.get(key)
     
@@ -34,7 +34,7 @@ class MemTable:
         ids = []
         for file in SStables_file:
             try:
-                ids.append(int(file.split("_")[1].spilt(".")[0]))
+                ids.append(int(file.split("_")[1].split(".")[0]))
             except ValueError:
                 continue
         next_id = max(ids) + 1 if ids else 0

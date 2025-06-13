@@ -4,7 +4,7 @@ def main():
     memtable = MemTable()
     
     while True:
-        command = input("Please enter a command (put, get, all, exit): ").strip().lowers()
+        command = input("Please enter a command (put, get, all, exit): ").strip().lower()
         if command == "put":
             key = input("Enter key: ")
             value = input("Enter values: ")
